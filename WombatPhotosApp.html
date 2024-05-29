@@ -1,4 +1,9 @@
+<!DOCTYPE html>
 <html> 
+    <head>
+        <meta charset="utf-8">
+        <title>WombatPhotoApp</title>
+    </head>
     <body>
 <h1>WombatPhotoApp</h1>
 <h2>Wombat photos</h2>
@@ -34,6 +39,28 @@
             <figcaption>Wombats <strong>hate</strong> when it's dirty!</figcaption>
         </figure>
     </section>
-
+    <section>
+        <h2>Wombat Form</h2>
+        <p></p>
+        <fieldset>
+         <legend>Is your wombat a Common wombat or a Southern hairy-nosed wombat?</legend>
+          <input id="common" type="radio" name="wombats" value="common">
+           <label for="common">Common wombat</label>
+          <input id="southern" type="radio" name="wombats" value="southern">
+           <label for="southern">Southern wombat</label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your wombat's personality?</legend>
+            <input id="lazy" type="checkbox" name="lazy" value="lazy">
+              <label for ="lazy">Lazy</label>
+            <input id="loving" type="checkbox" name="loving" value="loving">
+              <label for ="loving">Loving</label>
+            <input id="energetic" type="checkbox" name="energetic" value="energetic">
+              <label for ="energetic">Energetic</label>
+        </fieldset>
+        <form action="file:///Users/anton/Programming/HTML/wombatApp(html)/WApp_submit.html">
+            <input type="text" placeholder="wombat photo URL" name="wombatphotourl" required="">
+            <button name="button">Submit</button>
+         </form> 
     </body>
 </html>
