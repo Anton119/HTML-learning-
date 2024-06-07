@@ -10,7 +10,19 @@
       <p id="description"> Thank you for taking the time to help us improve the platform </p>
       <form id="survey-form">
         <fieldset>
-          <label for="name">Name <input id="name" type="text"/</label>
+          <label for="name">Name <input id="name-label" type="text" required placeholder="Enter your name"></label>
+          <label for="email">Email <input 
+          id="email-label" type="email" required placeholder="Enter your email"></label>
+          <label for="age">Age<input id="number-label" type="number" min="13" max="120" placeholder="Enter your age"/></label>
+          <label for="role">Which option best describes your current role?<select id="dropdown" name="role">
+            <option value="">(select one)</option>
+            <option value="1">concert promoter</option>
+            <option value="2">performer</option>
+            <option value="3">spectator</option>
+            </label>
           </fieldset>
-      </body>
-</html>
+      <legend>Account type (required)</legend>
+        <label for="definitely"><input id="definitely" type="radio" name="definitely" class="inline" checked/>Definitely</label>
+        <label for="maybe"><input id="maybe" type="radio" name="maybe" class="inline" checked /> Maybe</label>
+        <label for="not-sure"><input id="not-sure" name="not-sure" type="radio" class="inline" checked/>
+      </fieldset>
